@@ -31,7 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 	
 gem 'toastr-rails'
-
+gem 'carrierwave'
+gem 'bootstrap-sass'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

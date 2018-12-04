@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :documents, only: [:index, :new, :create, :destroy]
   devise_for :translators, path: 'translators',  controllers: { sessions: "translators/sessions"}
   devise_for :users, path: 'users', controllers: { sessions: "users/sessions"}
   root 'main#home'
