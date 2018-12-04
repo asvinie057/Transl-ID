@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 get '/edit-translator', to: 'private#edit'
 get '/edit-foreigner', to: 'private#show'
 get '/translator', to: 'public#show'
-get '/translators', to: 'public#index'
+get '/translators', to: 'public#index' 
 
 #resources :private only: [:edit, :show]
 #resources :public only: [:index, :show]

@@ -1,3 +1,25 @@
+body {
+  background-color: #CECECE;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -15,7 +37,9 @@
 
 }
 
-  .image {
-  width: 50%;
-  height: 200px;
+
+.flex-item {
+  margin-left: 50px;
+  margin-right: 50px;
+
 }

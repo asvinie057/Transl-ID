@@ -1,10 +1,23 @@
-
+<nav>
+	<div class="scrollmenu">
+      <%= link_to "About us", root_path %>
+      <%= link_to "Services", root_path %>
+      <%= link_to "Traducteurs", root_path %>
+      <%= link_to "Témoignages", root_path %>
+      <%= link_to "Partenaires", root_path %>
+  		<a href="#About us">About us</a>
+  		<a href="#Services">Services</a>
+  		<a href="#Traducteurs">Traducteurs</a>
+  		<a href="#Témoignages">Témoignages</a>
+  		<a href="#Partenaires">Partenaires</a>
+	</div>
+</nav>
 
 
 <ul class="flex-container">
-  <%= image_tag ("homebackground.jpg") %>
-  <li class="flex-item">2</li>
-  <li class="flex-item">3</li>
-  <li class="flex-item">4</li>
-  <li class="flex-item">5</li>
+  <li class="flex-item">About us<%= image_tag ("homebackground.jpg"), style: "width:1300px;height:600px"  %></li>
+  <li class="flex-item">Services<%= image_tag ("services.png"), style: "width:500px;height:300px" %><%= image_tag ("keyvalues.png"), style: "width:500px;height:200px"  %></li>
+  <li class="flex-item">Traducteurs</li>
+  <li class="flex-item">Témoignages</li>
+  <li class="flex-item">Partenaires</li>
 </ul>
