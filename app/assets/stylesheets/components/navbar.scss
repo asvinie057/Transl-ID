@@ -44,53 +44,17 @@ body {
   font-size: 18px;
 }
 
-.dropdown.dropbtn {
+.button-sign {
   float: right;
   background-color: #798081;
   margin-right: 10px;
   font-family: Gill Sans, sans-serif;
   text-decoration: none;
+  outline: none;
   line-height: 35px;
   font-size: 18px;
   border-radius: 10px;
   color: white;
-}
-
-.dropdown {
-  float: right;
-  background-color: #798081;
-  margin-right: 10px;
-  font-family: Gill Sans, sans-serif;
-  text-decoration: none;
-  line-height: 35px;
-  font-size: 18px;
-  border-radius: 10px;
-  color: white;
-}
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: right;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 @media screen and (max-width: 500px) {
