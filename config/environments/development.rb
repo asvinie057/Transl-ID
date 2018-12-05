@@ -30,6 +30,8 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
 
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
@@ -61,7 +63,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-  Ruby
 
   config.action_mailer.default_url_options = { host: '137.74.175.51', port: 3001 }
   
