@@ -1,3 +1,4 @@
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -27,10 +28,9 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  Paperclip.options[:command_path] = "/usr/local/bin/"
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
-
-  Paperclip.options[:command_path] = "/usr/local/bin/"
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -62,28 +62,6 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-
-
-  config.action_mailer.default_url_options = { host: '137.74.175.51', port: 3001 }
-  
-  config.action_mailer.perform_caching = false 
-  
-  config.action_mailer.perform_deliveries = true
-  
-  config.action_mailer.raise_delivery_errors = true
-  
-  config.action_mailer.delivery_method = :smtp
-  
-  config.action_mailer.smtp_settings = {
-    user_name:      Rails.application.secrets.mail_username,
-    password:       Rails.application.secrets.mail_password,
-    domain:         'gmail.com',
-    address:       'smtp.gmail.com',
-    port:          '587',
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
-
 
   config.action_mailer.default_url_options = { host: '137.74.175.51', port: 3001 }
   

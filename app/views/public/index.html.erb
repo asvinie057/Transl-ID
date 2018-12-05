@@ -1,2 +1,9 @@
 <!-- List of all translators available -->
 List of all translators available
+
+
+<% @traducteurs.each do |transl| %>
+    <div>
+    <%= transl.email %>
+    <div>
+<% end %>

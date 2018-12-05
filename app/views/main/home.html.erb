@@ -1,2 +1,26 @@
 <h1>Main#home</h1>
 <p>Find me in app/views/main/home.html.erb</p>
+
+<% if user_signed_in? %>
+ 
+  <%= link_to('Edit registration', edit_user_registration_path) %>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+ 
+<% else %>
+ 
+  <%= link_to('Register', new_user_registration_path)  %>
+  <%= link_to('Login', new_user_session_path)  %>  
+ 
+<% end %>
+
+<% if translator_signed_in? %>
+ 
+  <%= link_to('Edit registration', edit_translator_registration_path) %>
+  <%= link_to('Logout', destroy_translator_session_path, :method => :delete) %>        
+ 
+<% else %>
+ 
+  <%= link_to('Register', new_translator_registration_path)  %>
+  <%= link_to('Login', new_translator_session_path)  %>  
+ 
+<% end %>
