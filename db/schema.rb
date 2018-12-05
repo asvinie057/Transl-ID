@@ -21,9 +21,28 @@ ActiveRecord::Schema.define(version: 2018_12_03_234440) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "avatar"
+    t.string "adress"
+    t.string "zip_code"
+    t.string "city"
+    t.string "country"
+    t.string "phone_number"
+    t.string "fax_number"
+    t.string "fix_number"
+    t.boolean "is_translator_valide", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_translators_on_email", unique: true
+    t.index ["first_name"], name: "index_translators_on_first_name"
+    t.index ["last_name"], name: "index_translators_on_last_name"
+    t.index ["phone_number"], name: "index_translators_on_phone_number"
     t.index ["reset_password_token"], name: "index_translators_on_reset_password_token", unique: true
   end
 
@@ -33,6 +52,20 @@ ActiveRecord::Schema.define(version: 2018_12_03_234440) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "adress"
+    t.string "zip_code"
+    t.string "city"
+    t.string "country"
+    t.string "phone_number"
+    t.boolean "is_urgent", default: false
+    t.boolean "is_admin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
