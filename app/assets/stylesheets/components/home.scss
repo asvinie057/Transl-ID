@@ -2,13 +2,14 @@ body {
   background-color: #CECECE;
 }
 
-div.scrollmenu {
+
+div.navbar-nav-item {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
 }
 
-div.scrollmenu a {
+div.js-scroll-trigger a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -16,9 +17,10 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
-div.scrollmenu a:hover {
+div.navbar-nav a:hover {
     background-color: #777;
 }
+
 
 .flex-container {
   padding: 0;
@@ -30,16 +32,60 @@ div.scrollmenu a:hover {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
-  
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+}
 
+.cart {
+  width: 1300px;
+  height: 600px;
+}
+
+.container {
+
+.cart {
+  width: 1300px;
+  height: 600px;
+}
+
+.centered {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line-1{
+    position: relative;
+    top: 100%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
 }
 
 
 .flex-item {
   margin-left: 50px;
   margin-right: 50px;
-
 }
+

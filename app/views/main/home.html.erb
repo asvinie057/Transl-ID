@@ -1,23 +1,32 @@
-<nav>
-	<div class="scrollmenu">
-      <%= link_to "About us", root_path %>
-      <%= link_to "Services", root_path %>
-      <%= link_to "Traducteurs", root_path %>
-      <%= link_to "Témoignages", root_path %>
-      <%= link_to "Partenaires", root_path %>
-  		<a href="#About us">About us</a>
-  		<a href="#Services">Services</a>
-  		<a href="#Traducteurs">Traducteurs</a>
-  		<a href="#Témoignages">Témoignages</a>
-  		<a href="#Partenaires">Partenaires</a>
-	</div>
+
+<nav id="navbar-wrapper">
+  <ul class="navbar-nav">
+      <li class="navbar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About us</a>
+      </li>
+      <li class="navbar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Services</a>
+      </li>
+      <li class="navbar-nav-item">
+          <a class="js-scroll-trigger" href="traducteurs">Traducteurs</a>
+      </li>
+      <li class="navbar-nav-item">
+          <a class="js-scroll-trigger" href="#témoignages">Témoignages</a>
+      </li>
+      <li class="navbar-nav-item">
+          <a class="js-scroll-trigger" href="#partenaires">Partenaires</a>
+      </li>
+    </ul>
 </nav>
 
 
-<ul class="flex-container">
-  <li class="flex-item">About us<%= image_tag ("homebackground.jpg"), style: "width:1300px;height:600px"  %></li>
-  <li class="flex-item">Services<%= image_tag ("services.png"), style: "width:500px;height:300px" %><%= image_tag ("keyvalues.png"), style: "width:500px;height:200px"  %></li>
-  <li class="flex-item">Traducteurs</li>
-  <li class="flex-item">Témoignages</li>
-  <li class="flex-item">Partenaires</li>
-</ul>
+   <ul class="flex-container">
+    <li class="container">
+      <div class="flex-item">About us<%= image_tag ("homebackground.jpg"), class:"cart" %> 
+          <div class="centered"><p class="line-1 anim-typewriter" >Animation typewriter style using css steps()</p></div>
+      </div></li>
+      <li class="flex-item">Services</li>
+      <li class="flex-item">Traducteurs</li>
+      <li class="flex-item">Témoignages</li>
+      <li class="flex-item">Partenaires</li>
+  </ul>
