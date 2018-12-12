@@ -27,8 +27,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# gem à nous
+## gem à nous
 gem 'devise'
+	
+gem 'toastr-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

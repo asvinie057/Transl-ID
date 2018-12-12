@@ -10,6 +10,7 @@
   </head>
 
   <body>
+<<<<<<< HEAD
     <div style="<%= "display:none;" if alert.nil? && notice.nil? %>">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
@@ -17,6 +18,17 @@
       <%= render '/navbar' %>
       
     <%= yield %>
+=======
+  <div style="<%= "display:none;" if alert.nil? && notice.nil? %>">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
+  <%= render 'main/navbar' %>
+
+
+
+  <%= yield %>
+>>>>>>> master
   </body>
   <%= render '/footer' %>
 </html>
